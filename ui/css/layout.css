@@ -1,0 +1,80 @@
+/*A nice font*/
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/*We go all the way to the edges*/
+body {
+    margin: 0;
+}
+
+/*
+Remove styling, margin and padding from the menu
+unordered list. Hide the overflow.
+*/
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #24292e;
+}
+
+/*
+Float the menu items to the left by default.
+ */
+.menu ul li {
+    float: left;
+}
+
+/*
+Set the menu link and the app name rules. It needs to be a block to make the
+whole link area click-able and to enable setting of the padding.The text of
+the actual link is centered to make improve the appearance. The default
+link text decoration on links is removed.
+ */
+.menu ul li a, .app-name {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*
+Darken the menu item when the mouse is hovered over it. This is only
+applied if the item is not active currently.
+ */
+.menu ul li a:hover:not(.active) {
+    background-color: #000;
+}
+
+/*
+Highlight the currently active menu item.
+ */
+.menu ul li a.active {
+    background-color: #4CAF50;
+}
+
+/*
+If the menu item has a right class float it to the right.
+ */
+.menu ul li.right {
+    float: right;
+}
+
+/*
+Bold the app name on the menu.
+ */
+.menu .app-name {
+    font-weight: bold;
+}
+
+/*
+Change to a vertical menu on smaller screens.
+ */
+@media screen and (max-width: 600px){
+    .menu ul li.right, .menu ul li {
+        float: none;
+    }
+}
