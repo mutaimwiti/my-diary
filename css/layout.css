@@ -45,7 +45,7 @@ link text decoration on links is removed.
 Darken the menu item when the mouse is hovered over it. This is only
 applied if the item is not active currently.
  */
-.menu ul li a:hover:not(.active) {
+.menu ul li a:not(.active):hover {
     background-color: #000;
 }
 
@@ -53,7 +53,8 @@ applied if the item is not active currently.
 Highlight the currently active menu item.
  */
 .menu ul li a.active {
-    background-color: #4CAF50;
+    background-color: darkgrey;
+    color: #000;
 }
 
 /*
