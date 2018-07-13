@@ -49,7 +49,7 @@ Panel - This component is a nice enclosure for a group of
 components.
 */
 .panel {
-    border: 1px solid #24292e;
+    border: 1px solid #c9c9c9;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
