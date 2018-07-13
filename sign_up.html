@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Set the width of the page to the device width with a zoom of 1.0-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <title>MyDiary</title>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li><span class="app-name">MyDiary</span></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#write">Write</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li class="right"><a href="#sign_in">Sign in</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-m6 col-m-offset-3">
+            <div class="panel">
+                <div class="panel-heading">Sign up</div>
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-m3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col-m9">
+                                <input type="text" required id="name" name="name" placeholder="Enter your name...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-m9">
+                                <input type="email" required id="email" name="email" placeholder="Enter your email...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m12" style="float: right">
+                                <input type="submit" value="Sign up">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
