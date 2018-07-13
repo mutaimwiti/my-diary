@@ -18,7 +18,7 @@ unordered list. Hide the overflow.
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #24292e;
+    background-color: #3b386b;
 }
 
 /*
@@ -47,15 +47,15 @@ Darken the menu item when the mouse is hovered over it. This is only
 applied if the item is not active currently.
  */
 .menu ul li a:not(.active):hover {
-    background-color: #000;
+    background-color: #080535;
 }
 
 /*
 Highlight the currently active menu item.
  */
 .menu ul li a.active {
-    background-color: darkgrey;
-    color: #000;
+    background-color: #eee;
+    color: #555;
 }
 
 /*
