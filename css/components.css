@@ -100,7 +100,7 @@ tr:nth-child(even) {
 /*
 Form - All form components here.
  */
-input[type=text], input[type=email], select, textarea {
+input[type=text], input[type=email], input[type=password], select, textarea {
     width: 100%;
     padding: 14px;
     border: 1px solid #ddd;
