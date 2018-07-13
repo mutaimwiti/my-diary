@@ -126,3 +126,30 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #000;
 }
+
+/*
+Buttons
+ */
+.link-button {
+    display: inline-block;
+    text-decoration: none;
+    padding:6px 12px;
+    color: white;
+    background-color: #24292e;
+}
+
+/*
+Entry - Rules applied to diary entry.
+ */
+.entry p {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+.entry p:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.entry .link-button {
+    float: right;
+}
