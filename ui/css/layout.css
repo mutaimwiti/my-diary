@@ -80,3 +80,49 @@ Change to a vertical menu on smaller screens.
         float: none;
     }
 }
+
+/*
+Landing page
+ */
+#showcase {
+    background-image:url("../images/showcase.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #322f5a;
+}
+
+#showcase h1 {
+    font-size: 50px;
+}
+
+#showcase #buttons {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase #buttons a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #322f5a;
+    border: #322f5a 1px solid;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin:5px;
+}
+
+#showcase #buttons a:hover {
+    background: #322f5a;
+    color: #fff;
+}
