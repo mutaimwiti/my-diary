@@ -34,11 +34,11 @@ whole link area click-able and to enable setting of the padding.The text of
 the actual link is centered to make improve the appearance. The default
 link text decoration on links is removed.
  */
-.menu ul li a, .app-name {
+.menu ul li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px 16px;
     text-decoration: none;
 }
 
@@ -126,3 +126,15 @@ Landing page
     background: #322f5a;
     color: #fff;
 }
+
+#brand {
+    display: flex;
+    flex-direction: row;
+}
+
+#brand span {
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+
