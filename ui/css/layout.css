@@ -1,0 +1,140 @@
+/*A nice font*/
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/*We go all the way to the edges*/
+body {
+    margin: 0;
+    color: #636b6f;
+}
+
+/*
+Remove styling, margin and padding from the menu
+unordered list. Hide the overflow.
+*/
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b386b;
+}
+
+/*
+Float the menu items to the left by default.
+ */
+.menu ul li {
+    float: left;
+}
+
+/*
+Set the menu link and the app name rules. It needs to be a block to make the
+whole link area click-able and to enable setting of the padding.The text of
+the actual link is centered to make improve the appearance. The default
+link text decoration on links is removed.
+ */
+.menu ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+/*
+Darken the menu item when the mouse is hovered over it. This is only
+applied if the item is not active currently.
+ */
+.menu ul li a:not(.active):hover {
+    background-color: #080535;
+}
+
+/*
+Highlight the currently active menu item.
+ */
+.menu ul li a.active {
+    background-color: #eee;
+    color: #555;
+}
+
+/*
+If the menu item has a right class float it to the right.
+ */
+.menu ul li.right {
+    float: right;
+}
+
+/*
+Bold the app name on the menu.
+ */
+.menu .app-name {
+    font-weight: bold;
+}
+
+/*
+Change to a vertical menu on smaller screens.
+ */
+@media screen and (max-width: 600px){
+    .menu ul li.right, .menu ul li {
+        float: none;
+    }
+}
+
+/*
+Landing page
+ */
+#showcase {
+    background-image:url("../images/showcase.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #322f5a;
+}
+
+#showcase h1 {
+    font-size: 50px;
+}
+
+#showcase #buttons {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase #buttons a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #322f5a;
+    border: #322f5a 1px solid;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin:5px;
+}
+
+#showcase #buttons a:hover {
+    background: #322f5a;
+    color: #fff;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row;
+}
+
+#brand span {
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+}
+

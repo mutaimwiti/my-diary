@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Set the width of the page to the device width with a zoom of 1.0-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="icon" href="images/logo.png">
+    <title>MyDiary</title>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li id="brand">
+            <img src="images/logo.png">
+            <span>MyDiary</span>
+        </li>
+        <li><a href="entries.html">My entries</a></li>
+        <li><a href="create.html">Write</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li class="right"><a href="sign_in.html">Sign in</a></li>
+        <li class="right"><a href="sign_up.html">Sign up</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-m8 col-m-offset-2">
+            <div class="panel">
+                <div class="panel-heading">Write</div>
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-m12">
+                                <label for="title">Title</label>
+                                <input type="text"
+                                       required id="title"
+                                       name="title"
+                                       placeholder="Entry title...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m12">
+                                <label for="details">Details</label>
+                                <textarea rows="10"
+                                          required
+                                          id="details"
+                                          name="details"
+                                          placeholder="Entry details..."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m12" style="float: right">
+                                <input type="submit" value="Create entry">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="application/javascript" src="scripts/app.js"></script>
+</body>
+</html>

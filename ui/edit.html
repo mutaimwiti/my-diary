@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Set the width of the page to the device width with a zoom of 1.0-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <title>MyDiary</title>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li id="brand">
+            <img src="images/logo.png">
+            <span>MyDiary</span>
+        </li>
+        <li><a href="entries.html">My entries</a></li>
+        <li><a href="create.html">Write</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li class="right"><a href="sign_in.html">Sign in</a></li>
+        <li class="right"><a href="sign_up.html">Sign up</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-m8 col-m-offset-2">
+            <div class="panel">
+                <div class="panel-heading">Edit</div>
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-m12">
+                                <label for="name">Title</label>
+                                <input type="text"
+                                       required id="title"
+                                       name="title"
+                                       value="Huracán LP 640-4 Performante"
+                                       placeholder="New title for entry...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m12">
+                                <label for="details">Details</label>
+                                <textarea rows="10"
+                                          required
+                                          id="details"
+                                          name="details"
+                                          placeholder="New details for entry...">The Lamborghini Huracán is a sports car built by Italian automotive manufacturer Lamborghini replacing the previous V10 flagship, the Gallardo. The Huracán made its worldwide debut at the 2014 Geneva Auto Show, and was released in the second quarter of 2014. The LP 610-4 designation comes from the fact that this car has 610 metric horsepower and 4 wheel drive, while LP stands for "Longitudinale Posteriore", which refers to the longitudinal mid-rear engine position. The Huracán was named "The Supercar of the Year 2014" by automotive magazine Top Gear.
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-m12" style="float: right">
+                                <input type="submit" value="Save entry">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="application/javascript" src="scripts/app.js"></script>
+</body>
+</html>

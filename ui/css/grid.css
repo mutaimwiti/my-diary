@@ -1,0 +1,200 @@
+/*
+This grid system ensures that smaller devices are considered
+which makes it very responsive.
+*/
+
+/*
+This will ensure that the padding and border of elements are
+included in the total width and height of the elements.
+*/
+* {
+    box-sizing: border-box;
+}
+
+/*
+Rows will be placed in <div> elements as in <div class="row">.
+The items inside a row will float to the left interrupting
+the normal flow of the page. This will cause other items
+to be placed as if the items do not exist. To solve this
+problem the flow is cleared.  'display: table;' ensures
+proper vertical alignment of columns since their
+content sizes may be varying.
+*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+All columns should float to the left and have a padding of 15px.
+*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/*
+Grid rules are applied for mobile first to make 
+the page load fast on mobile devices.
+*/
+[class*="col-"] {
+    width: 100%;
+}
+
+/*
+These rules are only applied on devices averaging
+at least the screen size of a tablet.
+*/
+@media only screen and (min-width: 600px) {
+    .col-s1 {
+        width: 8.33%;
+    }
+
+    .col-s2 {
+        width: 16.66%;
+    }
+
+    .col-s3 {
+        width: 25%;
+    }
+
+    .col-s4 {
+        width: 33.33%;
+    }
+
+    .col-s5 {
+        width: 41.66%;
+    }
+
+    .col-s6 {
+        width: 50%;
+    }
+
+    .col-s7 {
+        width: 58.33%;
+    }
+
+    .col-s8 {
+        width: 66.66%;
+    }
+
+    .col-s9 {
+        width: 75%;
+    }
+
+    .col-s10 {
+        width: 83.33%;
+    }
+
+    .col-s11 {
+        width: 91.66%;
+    }
+
+    .col-s12 {
+        width: 100%;
+    }
+}
+
+/*
+These rules are only applied on devices average
+desktop devices.
+*/
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-m1 {
+        width: 8.33%;
+    }
+
+    .col-m-offset-1{
+        margin-left:8.33%
+    }
+
+    .col-m2 {
+        width: 16.66%;
+    }
+
+    .col-m-offset-2{
+        margin-left: 16.66%;
+    }
+
+    .col-m3 {
+        width: 25%;
+    }
+
+    .col-m-offset-3{
+        margin-left: 25%;
+    }
+
+    .col-m4 {
+        width: 33.33%;
+    }
+
+    .col-m-offset-4{
+        margin-left: 33.33%;
+    }
+
+    .col-m5 {
+        width: 41.66%;
+    }
+
+    .col-m-offset-5{
+        margin-left: 41.66%;
+    }
+
+    .col-m6 {
+        width: 50%;
+    }
+
+    .col-m-offset-6{
+        margin-left: 50%;
+    }
+
+    .col-m7 {
+        width: 58.33%;
+    }
+
+    .col-m-offset-7{
+        margin-left: 58.33%;
+    }
+
+    .col-m8 {
+        width: 66.66%;
+    }
+
+    .col-m-offset-8{
+        margin-left: 66.66%;
+    }
+
+    .col-m9 {
+        width: 75%;
+    }
+
+    .col-m-offset-9{
+        margin-left: 75%;
+    }
+
+    .col-m10 {
+        width: 83.33%;
+    }
+
+    .col-m-offset-10{
+        margin-left: 83.33%;
+    }
+
+    .col-m11 {
+        width: 91.66%;
+    }
+
+    .col-m-offset-11{
+        margin-left: 91.66%;
+    }
+
+    .col-m12 {
+        width: 100%;
+    }
+
+    .col-m-offset-12{
+        margin-left: 100%
+    }
+}

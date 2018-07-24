@@ -1,0 +1,190 @@
+/*COMPONENTS*/
+
+/*
+Global
+ */
+.x-scroll {
+    overflow-x: auto;
+}
+
+/*
+Container - This component contains all other view
+components. It's main job is to determine the
+width that the view takes.
+*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container:after, .container:before {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*
+Panel - This component is a nice enclosure for a group of
+components.
+*/
+.panel {
+    border: 1px solid #322f5a;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-body {
+    padding: 15px
+}
+
+.panel-body:after, .panel-body:before {
+    content: " ";
+    display: table
+}
+
+.panel-body:after {
+    clear: both
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #3b386b;
+    color: white;
+    background-color: #3b386b;
+}
+
+/*
+Table - All table styles are here.
+ */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;;
+}
+
+td a{
+    text-decoration: none;
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*
+Form - All form components here.
+ */
+input[type=text], input[type=email], input[type=password], select, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    /*border-radius: 4px;*/
+    resize: vertical;
+}
+
+label {
+    padding: 14px 14px 14px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #3b386b;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+}
+
+/*
+Buttons
+ */
+.link-button {
+    display: inline-block;
+    text-decoration: none;
+    padding:6px 12px;
+    color: white;
+    background-color: #3b386b;
+}
+
+/*
+Entry - Rules applied to diary entry.
+ */
+.entry p {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+.entry p:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.entry .link-button {
+    float: right;
+}
+
+.btn-small {
+    background-color: #3b386b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.entry-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #eceaff;
+    margin-bottom: 25px;
+}
+
+.entry-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.entry-card a{
+    text-decoration: none;
+}
+
+.entry-card-item a{
+    text-decoration: none;
+}
+
+.entry-card-date {
+    margin-left: 5px;
+}
+
+.entry-card-edit{
+    float: right;
+}
