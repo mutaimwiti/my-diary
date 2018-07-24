@@ -153,3 +153,38 @@ Entry - Rules applied to diary entry.
 .entry .link-button {
     float: right;
 }
+
+.btn-small {
+    background-color: #3b386b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.entry-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #eceaff;
+    margin-bottom: 25px;
+}
+
+.entry-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.entry-card a{
+    text-decoration: none;
+}
+
+.entry-card-item a{
+    text-decoration: none;
+}
+
+.entry-card-date {
+    margin-left: 5px;
+}
+
+.entry-card-edit{
+    float: right;
+}
